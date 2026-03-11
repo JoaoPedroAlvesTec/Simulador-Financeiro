@@ -1,0 +1,99 @@
+  /* Reset mínimo */
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  /* Estilos do layout */
+  header {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #222222; /* Ou a cor que você definiu para o header */
+    width: 100%; /* Ocupar a tela toda */
+    align-items: center;
+    height: 72px;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.300);
+    position: relative; 
+    z-index: 10;
+}
+  .header_button{
+    display: flex;
+    gap: 20px;                     /* Espaço entre o LOGIN e o SIGN UP */
+    align-items: center;
+    padding-right: 3.75rem;   
+  }
+  #header_logo{
+     width: 7.5rem;   /* Proporcional aos 88px */
+     height: 2.75rem; /* Proporcional aos 22px */
+     padding-left: 3.75rem;
+
+  }
+  #sign_in {
+    background-color: rgb(10, 210, 0); /* Verde neon da imagem */
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 5.5rem;   /* Proporcional aos 88px */
+    height: 1.375rem; /* Proporcional aos 22px */
+    font-size: 0.75rem; /* Fonte menor para caber na altura de 22px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login {
+    background-color: rgb(10, 210, 0); /* Verde neon da imagem */
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 5.5rem;   /* Proporcional aos 88px */
+    height: 1.375rem; /* Proporcional aos 22px */
+    font-size: 0.75rem; /* Fonte menor para caber na altura de 22px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  /* Container que engloba nav + main + aside */
+.content {
+    display: flex;
+    min-height: 500px;
+    /* altura da área de conteúdo */
+    width: 100%;
+
+}
+main {
+    width: 100%;
+    background: linear-gradient(to bottom, #000000 50%, #343434 100%);
+    font-family: Arial, sans-serif;
+    /* Garante que o fundo ocupe no mínimo a tela inteira */
+    min-height: calc(100vh - 60px - 60px);
+    
+    /* Se quiser usar a unidade moderna para mobile: */
+    min-height: calc(100svh - 60px - 60px);
+}
+  footer {
+    height: 60px;
+    background: pink;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+}
+
+/* TELAS LOG_IN E REGISTER */
+
+#center_box{
+  background-color: #222222;
+  height: 31.25rem;
+  width: 28.125rem ;
+  border-radius: 20px;
+}
