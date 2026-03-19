@@ -1,19 +1,18 @@
-.content {
-    display: flex;
-    min-height: 500px;
-    /* altura da área de conteúdo */
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+body {
+    font-family: 'Koulen', sans-serif;
 }
-main {
+.content { 
     width: 100%;
     height: max-content;
     background: linear-gradient(to bottom, #000000 50%, #343434 100%);
-    font-family: Arial, sans-serif;
+    font-family: 'Koulen', sans-serif;
     min-height: calc(100vh);/* Garante que o fundo ocupe no mínimo a tela inteira */
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;
 }
+
 #center_box{
   background-color: #222222;
   height: 31.25rem;
@@ -21,17 +20,27 @@ main {
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+#div_logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(12 123 28);
+    margin-bottom: 0.300rem ;
+}
+#logo{
+    width: 6.25rem;
+    margin-top: 0.625rem;
 }
 .div_form{
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100%;
 }
 #lbl_form{
     color: white;
 }
+
 * {
   box-sizing: border-box; /* Garante que padding não aumente o tamanho dos elementos */
 }
@@ -40,31 +49,67 @@ main {
     width: 100%;
     background-color: white;
 }
+#div_input{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;    
+}
 #ipt_email{
-    border-color:rgb(10, 210, 0);
+    border-color:rgb(12 123 28);
     background-color: transparent;
     border-radius: 6px;
     min-width: 18.75rem ;
     min-height: 2.188rem ;
     text-align: center;
+    margin-bottom: 0.625rem;
+    font-family: 'Koulen', sans-serif;
 
 }
 #ipt_password{
-    border-color:rgb(10, 210, 0);
+    border-color:rgb(12 123 28);
     background-color: transparent;
     border-radius: 6px;
     min-width: 18.75rem ;
     min-height: 2.188rem ;
     text-align: center;
+    margin-bottom: 0.625rem;
+    font-family: 'Koulen', sans-serif;
 }
 #btn_login{
     color: white;
     min-width: 18.75rem ;
     min-height: 2.188rem ;
-    border-color:rgb(10, 210, 0);
-    background-color: transparent;
+    border-color:rgb(12 123 28);
+    background-color: rgb(12 123 28);
     border-radius: 6px;
+    margin-top: 20px;
+    font-family: 'Koulen', sans-serif;
 }
-#title{
-    padding-top: 1.25rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    line-height: 1;
+    display: inline-block;
+}
+label{
+    line-height: 1;
+  display: inline-block;
 }
