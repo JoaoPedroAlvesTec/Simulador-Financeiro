@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* 1. Reset e Fonte Global */
+/* 1. Reset e Fonte Global - IGUAL AO LOGIN/REGISTER */
 * {
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
@@ -14,7 +14,7 @@ html, body {
     background-color: #000;
 }
 
-/* 2. Container Principal (Fundo) */
+/* 2. Container Principal */
 .content { 
     width: 100%;
     min-height: 100vh;
@@ -22,21 +22,24 @@ html, body {
     display: flex;
     justify-content: center; 
     align-items: center;
+    padding: 20px 0; /* Espaço para não encostar no topo em telas pequenas */
 }
 
-/* 3. Caixa Central (A "Center Box") */
+/* 3. Caixa Central (Adaptável) */
 #center_box {
     background-color: #222222;
-    height: 31.25rem; /* Altura fixa para ambas as telas */
+    /* Aqui está o segredo: min-height igual às outras, mas auto para crescer */
+    min-height: 31.25rem; 
+    height: auto; 
     width: 28.125rem;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo dentro da box */
-    padding: 20px; 
+    align-items: center;
+    padding: 30px 20px; /* Padding generoso para os itens respirarem */
 }
 
-/* 4. Logo e Cabeçalho do Form */
+/* 4. Logo e Cabeçalho */
 #div_logo {
     display: flex;
     flex-direction: column;
@@ -64,7 +67,7 @@ html, body {
     margin: 10px 0;
 }
 
-/* 5. Formulário e Inputs */
+/* 5. Formulário e Inputs Padronizados */
 .div_form {
     display: flex;
     flex-direction: column;
@@ -73,12 +76,13 @@ html, body {
 }
 
 #div_input {
-    margin-top: 30px;
+    margin-top: 20px; /* Reduzi um pouco para caber tudo melhor */
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    gap: 5px;   
 }
 
-/* Estilo padronizado para TODOS os inputs */
+/* Estilo de Input idêntico ao Login */
 input {
     border: 2px solid rgb(12, 123, 28);
     background-color: transparent;
@@ -86,21 +90,43 @@ input {
     min-width: 18.75rem;
     min-height: 2.188rem;
     text-align: center;
-    margin-bottom: 0.625rem;
     color: white;
     font-size: 1.1rem;
-    font-family: inherit; /* Garante Bebas Neue */
+    margin-bottom: 0.625rem;
+    outline: none;
+    font-family: inherit;
 }
 
-/* 6. Botões (Login e Register) */
-#btn_login, #btn_register {
+input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* 6. Grid para Telefone (DDD + Número) */
+#div_tel {
+    display: flex;
+    gap: 10px; /* Espaço entre DDD e Numero */
+    width: 18.75rem;
+}
+
+#ipt_ddd_telefone {
+    width: 4rem;
+    min-width: 4rem;
+}
+
+#ipt_telefone {
+    flex: 1; /* Ocupa o resto da linha */
+    min-width: 0; /* Remove o min-width padrão para não quebrar */
+}
+
+/* 7. Botão de Confirmação */
+#btn_confirm {
     color: white;
     min-width: 18.75rem;
     min-height: 2.188rem;
     border: none;
     background-color: rgb(12, 123, 28);
     border-radius: 6px;
-    margin-top: 20px;
+    margin-top: 15px;
     cursor: pointer;
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -108,12 +134,13 @@ input {
     transition: 0.3s;
 }
 
-#btn_login:hover, #btn_register:hover {
+#btn_confirm:hover {
     background-color: rgb(15, 150, 35);
+    box-shadow: 0 0 15px rgba(12, 123, 28, 0.5);
 }
 
-/* 7. Ajustes de Texto */
-p, label {
-    line-height: 1.2;
-    display: inline-block;
+/* Ajuste para inputs do tipo Date (para não quebrar o layout) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Deixa o ícone do calendário branco */
+    cursor: pointer;
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador Financeiero</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="..\css\complete_register.css">
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="content">
+        <div id="center_box">
+            <form class="div_form">
+                <div id="div_logo">
+
+                    <img src="..\img\logo.png" id="logo">
+
+                    <p id="p_title">FINISH YOUR ACCOUNT</p>
+                </div>
+                <div id="line"></div>
+                <div id="div_input">
+                    <label for="ipt_nome" id="lbl_form">NOME</label>
+                    <input type="text" id="ipt_nome" placeholder="NOME">
+
+                    <label for="ipt_cpf" id="lbl_form">CPF</label>
+                    <input type="text" id="ipt_cpf" placeholder="CPF">
+
+                    <label for="ipt_data_nascimento" id="lbl_form">DATA NASCIMENTO</label>
+                    <input type="text" id="ipt_data_nascimento" placeholder="DATA NASCIMENTO">
+
+                    <label for="ipt_telefone" id="lbl_form">TELEFONE</label>
+                    <div id="div_tel">
+                        <input type="text" id="ipt_ddd_telefone" placeholder="DD" maxlength="2">
+                        <input type="text" id="ipt_telefone" placeholder="TELEFONE" maxlength="9">
+                    </div>
+                </div>
+
+                <button type="submit" id="btn_confirm">CONFIRMAR</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

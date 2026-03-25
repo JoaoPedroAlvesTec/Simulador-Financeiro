@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Dashboard Financeiro</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Financeiro</h2>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <button id="btn-saldo" class="menu-item active">💰 Meu Saldo</button>
+                <button id="btn-adicionar" class="menu-item">➕ Adicionar Gasto</button>
+                <button id="btn-grafico" class="menu-item">📊 Gráfico de Gastos</button>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <button id="btn-sair" class="menu-item">Sair</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Visão Geral</h1>
+                <div class="user-profile">
+                    <span>Olá, <span id="user_name">Carregando...</span></span>
+                </div>
+            </header>
+
+            <section id="display-area">
+                <div class="welcome-card">
+                    <h2>Bem-vindo, <span id="display_welcome_name">Usuário</span>!</h2>
+                    <p>Selecione uma opção no menu lateral para começar a gerenciar seu dinheiro.</p>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro - Meu Saldo</title>
+    <link rel="stylesheet" href="../css/saldo.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Financeiro</h2>
+            </div>
+            <nav class="sidebar-menu">
+                <button class="menu-item active">💰 Meu Saldo</button>
+                <button class="menu-item">➕ Adicionar Gasto</button>
+                <button class="menu-item">📊 Gráfico de Gastos</button>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-sair" class="menu-item">Sair</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Visão Geral do Saldo</h1>
+                <div class="user-profile">
+                    <span>Olá, <span id="user_name">João</span></span>
+                </div>
+            </header>
+
+            <section class="cards-container">
+                <div class="card shadow-green">
+                    <p class="card-title">Saldo Atual</p>
+                    <h2 class="card-value neon-text" id="total-saldo">R$ 0,00</h2>
+                </div>
+                <div class="card">
+                    <p class="card-title">Receitas do Mês</p>
+                    <h2 class="card-value" id="total-receita">R$ 0,00</h2>
+                </div>
+                <div class="card">
+                    <p class="card-title">Despesas do Mês</p>
+                    <h2 class="card-value" id="total-despesa">R$ 0,00</h2>
+                </div>
+            </section>
+
+            <section class="transactions-section">
+                <h3>Últimas Transações</h3>
+                <div class="transaction-list" id="lista-transacoes">
+                    <div class="transaction-item">
+                        <span class="t-nome">Exemplo (Virá do Banco)</span>
+                        <span class="t-valor val-out">- R$ 0,00</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
