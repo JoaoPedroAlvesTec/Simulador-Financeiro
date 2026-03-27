@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* 1. Reset e Fonte Global - IGUAL AO LOGIN/REGISTER */
 * {
     box-sizing: border-box;
     font-family: 'Bebas Neue', sans-serif;
@@ -14,7 +13,6 @@ html, body {
     background-color: #000;
 }
 
-/* 2. Container Principal */
 .content { 
     width: 100%;
     min-height: 100vh;
@@ -22,13 +20,11 @@ html, body {
     display: flex;
     justify-content: center; 
     align-items: center;
-    padding: 20px 0; /* Espaço para não encostar no topo em telas pequenas */
+    padding: 20px 0; 
 }
 
-/* 3. Caixa Central (Adaptável) */
 #center_box {
     background-color: #222222;
-    /* Aqui está o segredo: min-height igual às outras, mas auto para crescer */
     min-height: 31.25rem; 
     height: auto; 
     width: 28.125rem;
@@ -36,10 +32,10 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px; /* Padding generoso para os itens respirarem */
+    padding: 30px 20px; 
 }
 
-/* 4. Logo e Cabeçalho */
+
 #div_logo {
     display: flex;
     flex-direction: column;
@@ -67,7 +63,6 @@ html, body {
     margin: 10px 0;
 }
 
-/* 5. Formulário e Inputs Padronizados */
 .div_form {
     display: flex;
     flex-direction: column;
@@ -76,13 +71,12 @@ html, body {
 }
 
 #div_input {
-    margin-top: 20px; /* Reduzi um pouco para caber tudo melhor */
+    margin-top: 20px; 
     display: flex;
     flex-direction: column; 
     gap: 5px;   
 }
 
-/* Estilo de Input idêntico ao Login */
 input {
     border: 2px solid rgb(12, 123, 28);
     background-color: transparent;
@@ -101,10 +95,9 @@ input::placeholder {
     color: rgba(255, 255, 255, 0.3);
 }
 
-/* 6. Grid para Telefone (DDD + Número) */
 #div_tel {
     display: flex;
-    gap: 10px; /* Espaço entre DDD e Numero */
+    gap: 10px; 
     width: 18.75rem;
 }
 
@@ -114,11 +107,11 @@ input::placeholder {
 }
 
 #ipt_telefone {
-    flex: 1; /* Ocupa o resto da linha */
-    min-width: 0; /* Remove o min-width padrão para não quebrar */
+    flex: 1; 
+    min-width: 0; 
 }
 
-/* 7. Botão de Confirmação */
+
 #btn_confirm {
     color: white;
     min-width: 18.75rem;
@@ -139,8 +132,7 @@ input::placeholder {
     box-shadow: 0 0 15px rgba(12, 123, 28, 0.5);
 }
 
-/* Ajuste para inputs do tipo Date (para não quebrar o layout) */
 input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(1); /* Deixa o ícone do calendário branco */
+    filter: invert(1);
     cursor: pointer;
 }

@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-html, body {
+html body {
     height: 100%;
     margin: 0;
-    /* Fonte definida aqui para o site TODO */
     font-family: 'Bebas Neue', sans-serif;
-    background-color: #000; /* Evita flash branco ao carregar */
+    background-color: #000; 
 }
 
 header {
@@ -19,7 +18,7 @@ header {
     width: 100%;
     align-items: center;
     height: 72px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra escura para combinar com o tema */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
     position: relative; 
     z-index: 10;
 }
@@ -34,7 +33,6 @@ header {
     gap: 60px;
     padding-left: 200px;
     color: white;
-    /* Removido font-family: Koulen para não dar conflito */
 }
 
 .header_button {
@@ -44,7 +42,6 @@ header {
     padding-right: 3.75rem; 
 }
 
-/* Remove sublinhado dos links que envolvem botões */
 .btn-link {
     text-decoration: none;
 }
@@ -58,7 +55,7 @@ header {
     width: 5.5rem;
     height: 1.875rem;
     letter-spacing: 1px;
-    font-family: inherit; /* Herda 'Bebas Neue' do body */
+    font-family: inherit; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +70,7 @@ header {
     width: 5.5rem;
     height: 1.875rem;
     letter-spacing: 1px;
-    font-family: inherit; /* Herda 'Bebas Neue' do body */
+    font-family: inherit; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,18 +84,17 @@ header {
 main {
     width: 100%;
     background: linear-gradient(to bottom, #000000 50%, #343434 100%);
-    min-height: calc(100vh - 72px); /* Usei 72px que é a altura do seu header */
+    min-height: calc(100vh - 72px); 
 }
 
 #image {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-end; /* Alinha a imagem à direita */
+    justify-content: flex-end; 
 }
 
 #background_image {
     max-width: 100%;
     height: auto;
-    /* Se quiser que ela não empurre o layout, pode usar object-fit */
 }

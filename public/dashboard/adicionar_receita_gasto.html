@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financeiro - Adicionar</title>
+    <link rel="stylesheet" href="../css/adicionar_receita_gasto.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Financeiro</h2>
+            </div>
+            <nav class="sidebar-menu">
+                <button class="menu-item">💰 Meu Saldo</button>
+                <button class="menu-item active">➕ Adicionar Gasto/Receita</button>
+                <button class="menu-item">📊 Gráfico de Gastos</button>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btn-sair" class="menu-item">Sair</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Gestão de Movimentações</h1>
+                <div class="user-profile">
+                    <span>Olá, <span id="user_name">João</span></span>
+                </div>
+            </header>
+
+            <section class="forms-container">
+                
+                <div class="card form-card">
+                    <h3 class="val-in">➕ Adicionar Receita</h3>
+                    <p class="card-subtitle">Entrada de dinheiro (Salário, bônus, etc)</p>
+                    <form id="form-receita" class="add-form">
+                        <input type="text" placeholder="Descrição (ex: Salário)" required>
+                        <input type="text" step="0.01" placeholder="Valor (R$)" required>
+                        <input type="date" required>
+                        <button type="submit" class="btn-add btn-in">Salvar Receita</button>
+                    </form>
+                </div>
+
+                <div class="card form-card">
+                    <h3 class="val-out">➖ Adicionar Gasto</h3>
+                    <p class="card-subtitle">Saída de dinheiro (Contas, lazer, etc)</p>
+                    <form id="form-gasto" class="add-form">
+                        <input type="text" placeholder="Descrição (ex: Aluguel)" required>
+                        <input type="text" step="0.01" placeholder="Valor (R$)" required>
+                        <input type="date" required>
+                        <button type="submit" class="btn-add btn-out">Salvar Gasto</button>
+                    </form>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

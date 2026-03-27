@@ -1,0 +1,30 @@
+{
+  "name": "projeto-financeiro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon --exec node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoPedroAlvesTec/Simulador-Financeiro.git"
+  },
+  "keywords": [],
+  "author": "Feito por Joaõ Pedro Alves",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.1",
+    "mysql2": "^3.20.0",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JoaoPedroAlvesTec/Simulador-Financeiro/issues"
+  },
+  "homepage": "https://github.com/JoaoPedroAlvesTec/Simulador-Financeiro#readme"
+}
